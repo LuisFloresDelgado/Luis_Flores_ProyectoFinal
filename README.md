@@ -70,10 +70,3 @@ Características:
 - Restricción de acceso según rol de usuario
 
 ## Final,Gracias.
-- Implementación de paginación en listados
-- Mejora en la gestión de imágenes de productos
-- Implementación de proceso de checkout completo
-- Historial de pedidos para usuarios
-- Implementación de filtrado por categorías/precios
-
-## Diagrama de Flujo MVC
