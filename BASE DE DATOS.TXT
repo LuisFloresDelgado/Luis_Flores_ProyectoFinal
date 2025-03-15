@@ -1,0 +1,35 @@
+PARA LA BASE DE DATOS 
+CREATE TABLE Productos (
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10,2) NOT NULL,
+    imagen VARCHAR(255),
+    categoria VARCHAR(100),
+    stock INT NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO Productos (id_producto, nombre, descripcion, precio, imagen, categoria, stock, fecha_creacion) VALUES 
+(1, 'Camiseta Titular Real Madrid 2024/25', 'Camiseta oficial del Real Madrid para temporada', 89.99, 'camisetaTitular.avif', 'Equipaciones', 100, '2025-03-07 11:08:44'),
+(2, 'Balón Oficial Champions', 'Balón oficial de la UEFA Champions League.', 29.99, 'balon.jpg', 'Accesorios', 50, '2025-03-07 11:08:44'),
+(3, 'Chaqueta de Entrenamiento', 'Chaqueta oficial de entrenamiento del Real Madrid', 79.99, 'chaqueta.jpg', 'Ropa', 75, '2025-03-07 11:08:44'),
+(4, 'Bufanda Clásica', 'Bufanda oficial del Real Madrid con los colores', 19.99, 'bufanda.jpg', 'Accesorios', 200, '2025-03-07 11:08:44'),
+(5, 'Pantalón Corto Titular', 'Pantalón corto blanco oficial del Real Madrid para temporada', 39.99, 'pantaloncorto.webp', 'Equipaciones', 120, '2025-03-07 11:08:44'),
+(6, 'Camiseta Retro (Prueba Añadir Producto)', 'Camiseta Retro Real Madrid Edicion Limitada', 65.0, 'retro.webp', 'Equipaciones', 3, '2025-03-11 08:23:17');
+
+
+CREATE TABLE Usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    rol VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Usuarios (id, username, password, email, rol) VALUES 
+(1, 'admin', 'admin', 'admin@example.com', 'admin'),
+(2, 'usuario', 'usuario', 'usuario@example.com', 'usuario');
+
+Si queremos iniciar Sesión como Administrador ponemos admin de usu y admin de contraseña 
+Si queremos iniciar Sesión como Usuario normal ponemos usuario de usu y admin de usuario 
