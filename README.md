@@ -60,15 +60,15 @@ El Controlador actúa como intermediario entre el Modelo y la Vista, procesando 
 En mi proyecto de la tienda del Real Madrid, utilicé la arquitectura MVC para organizar y estructurar mi código de manera eficiente. Esta metodología me ayudó a separar las diferentes responsabilidades de mi aplicación web.
 Al implementar esta arquitectura, logré:
 
-Separar claramente las responsabilidades de cada componente
-Hacer mi código más organizado y mantenible
-Facilitar futuras modificaciones y mejoras
-Mejorar la escalabilidad de mi aplicación web
+- Separar claramente las responsabilidades de cada componente.
+- Hacer mi código más organizado y mantenible.
+- Facilitar futuras modificaciones y mejoras.
+- Mejorar la escalabilidad de mi aplicación web.
 
-La estructura de carpetas refleja esta separación:
+### La estructura de carpetas refleja esta separación:
 
-Models/: Clases de acceso a datos
-Views/: Archivos de presentación
-Controllers/: Lógica de control
+- Models/: Clases de acceso a datos
+- Views/: Archivos de presentación
+- Controllers/: Lógica de control
 
 ## Final,Gracias.
